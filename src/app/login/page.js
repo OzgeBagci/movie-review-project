@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
@@ -5,6 +7,8 @@ export default function Login() {
         <h1 className="text-3xl font-semibold text-center mb-6">
           Welcome Back
         </h1>
+
+        {/* Login Form */}
 
         <form className="flex flex-col space-y-4">
           <div>
@@ -28,18 +32,24 @@ export default function Login() {
               className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
+          {/* Login Buttons */}
 
           <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-500 transition">
             Login
           </button>
         </form>
 
-        <div className="mt-4 text-center text-sm text-blue-400">
+        {/* Sign Up Link */}
+
+        <div className="text-gray-400 text-sm text-center mt-4">
           <p>
             Don't have an account?{" "}
-            <a href="#" className="text-blue-400 hover:underline">
+            <Link
+              href="/signup"
+              className="text-blue-400 font-bold hover:underline"
+            >
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </div>

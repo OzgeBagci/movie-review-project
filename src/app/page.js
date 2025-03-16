@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
       <Link href="/login">
-        <p className="text-blue-500 mt-4">Go to Login</p>
+        <p className="text-blue-500 mt-4 hover:underline">Go to Login</p>
       </Link>
     </div>
   );
